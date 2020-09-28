@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Coca Cola Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+      <section class="sec">
+     <header> 
+    <img src="images/logo.png" alt= "pepsi logo" style="width:55px;height:55px;">
+                    <ul>
+                        <li><a href = "#">Home</a></li>
+                        <li><a href = "#">Products</a></li>
+                        <li><a href = "#">What's New</a></li>
+                        <li><a href = "#">Newsletter</a></li>
+                        <li><a href = "#">Contact</a></li>
+     </ul>
+</header>
+<div class="content">
+<div class="textBox">
+ <h2>That's What<br><span>I Like</span></h2>
+ <p> Pepsi is an American food and beverage company that is one of the largest in the world, with products available in more than 200 countries. It took its name in 1965 when the Pepsi-Cola Company merged with Frito-Lay, Inc. The company’s headquarters are in Purchase, New York.                            Discover our latest news and find nutritional information and ingredients about Pepsi's full range of drinks. </p>
+<a href="#">View All Products</a>           </div> 
+    <div class="imgBox">
+        <img src="images/pepsi001.png" class="Pepsi Can">
+    </div>
+</div>
+<ul class="thumb">
+    <li><img src="images/pepsi001.png" onclick="imgSlider('pepsi002.png');changeBgColor('#0062be')"></li>></li>
+    <li><img src="images/pepsi002.png" onclick="imgSlider('pepsi002.png');changeBgColor('#e60c2c')"></li>
+    <li><img src="images/pepsi003.png" onclick="imgSlider('pepsi003.png');changeBgColor('#1e1e1e')"></li>
+</ul>
+<ul class="sci">
+    <li><a href="#"></a><img src="images/twitter.png"</a></li>
+    <li><a href="#"></a><img src="images/instagram.png"</a></li>
+    <li><a href="#"></a><img src="images/facebook.png"</a></li>
+</ul>
+</section>
+<script type="text/javascript">
+function imgSlider(anything){
+    document.querySelector('pepsi').src = anything;
+}
+function changeBgColor(color){
+    const sec = document.querySelector('.sec');
+    sec.style.background = color;
+}
+
+</script>
+</body>
+</html>
